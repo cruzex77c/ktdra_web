@@ -6,32 +6,59 @@
 
 /*======TIPOGRAFÍA=====*/
 @font-face {
-    font-family: Garamond-regular;
-    src: url('../fonts/Garamond Regular.ttf');
+    font-family: muli-light;
+    src: url('../fonts/muli/Muli-Light.ttf');
 }
 @font-face {
-    font-family: Avenir-black;
-    src: url('../fonts/AvenirLTStd-Black.otf');
+    font-family: muli-regular;
+    src: url('../fonts/muli/Muli-Regular.ttf');
 }
 @font-face {
-    font-family: Avenir-book;
-    src: url('../fonts/AvenirLTStd-Book.otf');
+    font-family: muli-bold;
+    src: url('../fonts/muli/Muli-Bold.ttf');
 }
-body{
-    font-family: 'Avenir-book';
+@font-face {
+    font-family: muli-extrabold;
+    src: url('../fonts/muli/Muli-ExtraBold.ttf');
 }
-b{
-    font-family: 'Avenir-black';
+
+
+@font-face {
+    font-family: lemon-light;
+    src: url('../fonts/lemon/LemonMilklight.otf');
 }
+@font-face {
+    font-family: lemon-regular;
+    src: url('../fonts/lemon/LemonMilk.otf');
+}
+@font-face {
+    font-family: lemon-bold;
+    src: url('../fonts/lemon/LemonMilkbold.otf');
+}
+
 
 /*====COLORES=====*/
 :root{
-    --azul3: #1f2939;
-    --azul2: #2b5c94;
-    --azul1: #487eae;
-    --gris: #edeeee;
+    --azul: #41C4DE;
+    --verde1: #00F583;
+    --verde2: #00A85A;
+    --rojo: #E1325D;
+    --amarillo: #E2B138;
+    --gris: #1B535E; 
 }
 
-header{
-    margin-top: 100px;
+
+.main_container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px auto auto;
+    grid-template-areas:  
+    'menu'
+    'main'
+    'footer'
+    ; 
+}
+
+main{
+    grid-area: main;
 }
