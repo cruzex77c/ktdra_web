@@ -13,7 +13,5 @@
 
     <?php require_once "views/modules/login.php";?>
 
-    <?php require_once "views/modules/registro.php";?>
-
 </body>
 </html>
