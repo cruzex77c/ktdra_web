@@ -7,6 +7,7 @@ $email = $_POST['correo'];
 $monto = $_POST['monto'];
 $plazo = $_POST['plazo'];
 $ventas = $_POST['ventas'];
+echo 'Hola';
 
 $mensaje_text = "
 Nombre: $nombre
