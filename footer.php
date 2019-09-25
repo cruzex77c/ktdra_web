@@ -3,7 +3,7 @@
             <div class="footer">
                 <div class="informacion">
                     <ul>
-                        <li class="title">INFORMACIÓN</li>
+                        <li class="title">INFO</li>
                         <li class="sub-menu" data-rel="inicio">Inicio</li>
                         <li class="sub-menu" data-rel="funciona">¿Cómo Funciona?</li>
                         <li class="sub-menu" data-rel="contacto">Contacto</li>
