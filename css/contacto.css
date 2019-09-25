@@ -1,0 +1,64 @@
+.imagen{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imagen img{
+    position: relative;
+    width: 100%;
+}
+.imagen .title{
+    position: absolute;
+    color: #fff;
+    font-size: 2em;
+    text-align: center;
+}
+
+.contacto{
+    display: grid;
+    grid-template-columns: 1em 1fr 1fr 1em;
+    grid-template-rows: 50px 1fr 50px;
+    grid-template-areas:  
+    '. . . .'
+    '. datos mapa .'
+    '. . . .'
+    ;
+}
+.contacto .datos{
+    grid-area: datos;
+    padding: 20px;
+}
+.contacto .datos .bloque{
+    display: flex;
+    align-items: center;
+    margin: 20px 0px;
+}
+.contacto .mapa{
+    grid-area: mapa;
+}
+
+
+
+@media screen and (max-width: 750px){
+    .imagen .title{
+        font-size: 1em;
+    }
+    .contacto{
+        display: grid;
+        grid-template-columns: 1em 1fr 1em;
+        grid-template-rows: 50px auto auto 50px;
+        grid-template-areas:  
+        '. . .'
+        '. datos .'
+        '. mapa .'
+        '. . .'
+        ;
+    } 
+    .contacto .datos .bloque{
+        flex-direction: column;
+    }
+    .contacto .datos .bloque .text{
+        text-align: center;
+    }
+}

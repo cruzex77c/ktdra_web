@@ -1,0 +1,230 @@
+a {
+    text-decoration: none;
+    color: #00A85A;
+}
+
+.divider {
+    border-top: 1px solid #d9dadc;
+    display: block;
+    line-height: 1px;
+    margin: 15px 0;
+    position: relative;
+    text-align: center;
+}
+
+.divider .divider-title {
+    background-color: #fff;
+    font-size: 10px;
+    letter-spacing: 1px;
+    padding: 0 20px;
+    text-transform: uppercase;
+}
+
+.container {
+    max-width: 500px;
+    width: 90%;
+    margin: auto;
+}
+
+.logo {
+    margin-bottom: 30px;
+    padding: 25px 0 10px;
+    border-bottom: 1px solid #d9dadc;
+    text-align: center;
+}
+
+.logo .ktdra-logo {
+    background-image: url("../imagenes/logo1.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: inline-block;
+    max-width: 100%;
+    width: 200px;
+}
+
+.logo .ktdra-logo:before {
+    content: "";
+    display: block;
+    padding-top: 33%;
+}
+
+.login_facebook {
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.login_facebook .botton-facebook{
+    width: 100%;
+    height: 45px;
+    border: none;
+    border-radius: 20px;
+    background-color: #3b5999;
+    color: #fff;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.login_facebook .botton-facebook:hover {
+    background-color: #3b5999d3;
+}
+
+.formulario {
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.formulario .form-group {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.formulario input[type="text"],
+.formulario input[type="password"],
+.formulario input[type="email"]{
+    padding: 7px;
+    font-size: 18px;
+    line-height: 18px;
+    border: 1px solid #aaa;
+    vertical-align: top;
+}
+
+.formulario .usuario, 
+.formulario .password,
+.formulario .email {
+    width:  100%;
+}
+
+.formulario .submit-btn {
+    padding: 6px 65px 6px 65px;
+    width: 35%;
+    max-height: 50px;
+    font-size: 16px;
+    font-style: normal;
+    display: inline-block;
+    color: #fff;
+    background-color: rgba(107, 9, 9, 0.767);
+    cursor: pointer;
+    border-radius: 30px;
+    float: right;
+}
+
+.formulario .submit-btn:hover {
+    background-color: rgba(107, 9, 9, 0.616);
+}
+
+.contenedor {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 17px;
+    user-select: none;
+}
+
+.contenedor input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+}
+
+.contenedor:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+.contenedor input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.contenedor input:checked ~ .checkmark:after{
+    display: block;
+}
+
+.contenedor .checkmark:after{
+    left: 7px;
+    top: 3px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+.texto-registrate {
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.texto-registrate p {
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.btn-registrar {
+    padding: 15px;
+	text-align: center;
+	width: 100%;
+	max-height: 48px;
+    font-size: 18px;
+    font-style: normal;
+	line-height: 18px;
+	background-color: #fff;
+	display: inline-block;
+	color: #000;
+	cursor: pointer;
+    border-radius: 20px;
+    border: 2px solid #000;
+}
+
+.btn-registrar:hover {
+    background-color: #616467;
+    color: #fff;
+    border: none;
+}
+
+.olvidado {
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    font-size: 20px;
+}
+
+.terminos {
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: #ccc;
+}
+
+.terminos a {
+    text-decoration: none;
+    color: rgb(13, 158, 168);
+    cursor: pointer;
+}
+
+.terminos a:hover {
+    color: rgb(14, 180, 192);
+}
+
+.texto-centrado {
+    text-align: center;
+    margin-bottom: 20px;
+}

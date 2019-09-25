@@ -1,0 +1,120 @@
+.uno{
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.uno .title{
+    margin-top: 20px;
+    font-size: 3em;
+    text-align: center;
+    font-family: 'Avenir-black';
+}
+
+.uno .desc{
+    margin-top: 50px;
+    padding: 50px 20px;
+    background: var(--gris);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.uno .desc .title{
+    width: 70%;
+    font-size: 2em;
+    text-align: center;
+    font-family: 'Avenir-black';
+}
+.uno .desc .text{
+    width: 70%;
+    font-size: 1.2em;
+    margin: 20px 0px;
+    text-align: center;
+}
+.uno .desc .imagenes{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.uno .desc .imagenes img{
+    width: 200px;
+}
+
+.dos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.dos > .title{
+    width: 70%;
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Avenir-black';
+    margin: 20px 0px;
+}
+.dos > .text{
+    width: 70%;
+    font-size: 1.2em;
+    margin: 20px 0px;
+    text-align: center;
+}
+.dos > img{
+    margin-top: 30px;
+}
+.dos .imagenes{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:  
+    'imagen texto'
+    ;
+}
+.dos .imagenes img{
+    width: 100%;
+    grid-area: imagen;
+}
+.dos .imagenes .content{
+    background: var(--azul3);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+}
+.dos .imagenes .content .title{
+    margin: 20px 0px;
+}
+
+@media screen and (max-width: 790px){
+    .uno{
+        padding: inherit;
+    }
+    .uno .desc .title{
+        width: 90%;
+    }
+    .uno .desc .text{
+        width: 90%;
+    }
+    .dos > .title{
+        width: 90%; 
+    }
+    .dos > .text{
+        width: 90%;
+    }
+    .dos .imagenes{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr auto;
+        grid-template-areas:  
+        'texto'
+        'imagen'
+        ;
+    }
+}

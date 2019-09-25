@@ -1,0 +1,251 @@
+/*=======HEADER========*/
+.imagen{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.imagen img{
+    width: 100%;
+    position: relative;
+}
+.imagen h2{
+    width: 800px;
+    position: absolute;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    font-size: 5em;
+    font-family: 'Avenir-black';
+    top: 20px;
+}
+.imagen h2 .derecha{
+    text-align: right;
+}
+.imagen > .texto{
+    position: absolute;
+    color: #000;
+    top: 200px;
+    font-size: 1.5em;
+}
+.imagen .container{
+    color: #fff;
+    width: 70%;
+    position: absolute;
+    background: #2b5c94ce;
+    bottom: 250px;
+    display: grid;
+    grid-template-columns: 3fr 1em 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:  
+    'cotizador . whatsapp'
+    ;
+    padding: 10px;
+}
+.imagen .container .cotizador{
+    grid-area: cotizador;
+    padding: 10px;
+    text-align: center;
+    background: #487eaeb2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #fff;
+    border-radius: 15px;
+}
+.imagen .container .cotizador .title{
+    font-size: 1.8em;
+}
+.imagen .container .cotizador p{
+    margin: 10px 0px;
+}
+.imagen .container .cotizador .container_cot{
+    display: flex;
+    flex-direction: column;
+}
+.imagen .container .cotizador .container_cot .form-group{
+    display: flex;
+    align-items: center;
+    margin: 10px 0px;
+}
+.imagen .container .cotizador .container_cot .form-group input[type='number']{
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    margin: 0px 10px;
+}
+.imagen .container .cotizador .container_cot .form-group input[type='range']{
+    -webkit-appearance: none;
+    margin: 0px 10px;
+    border-radius: 10px;
+    height: 5px;
+    padding: 0;
+    outline: none;
+}
+/*bolita*/
+.imagen .container .cotizador .container_cot .form-group input[type='range']::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    border: 0;
+    height: 12px;
+    width: 12px;
+    position: relative;
+    border-radius: 15px;
+    background: var(--azul2);
+    bottom: 0px;
+    cursor: pointer;
+    transition: .3s;
+}
+.imagen .container .cotizador .container_cot .form-group input[type='range']::-webkit-slider-thumb:hover{
+    border: 2px solid #fff;
+    transition: .3s;
+}
+
+.imagen .container .cotizador .container_cot button{
+    background: var(--azul3);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 1.2em;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.imagen .container .whatsapp{
+    grid-area: whatsapp;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+}
+.imagen .container .whatsapp p{
+    font-size: 1.2em;
+    border: 1px solid #fff;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.imagen .container .whatsapp i{
+    font-size: 3em;
+    margin: 10px 0px;
+}
+
+
+/*=======MAIN========*/
+main .galeria{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 50px 20px;
+    background: var(--gris);
+}
+main .galeria .caja{
+    width: 300px;
+    margin: 10px;
+}
+main .galeria .caja img{
+    width: 100%;
+}
+main .galeria .caja p{
+    font-family: 'Avenir-black';
+    text-align: center;
+}
+
+main .contacto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 50px 20px;       
+}
+main .contacto img{
+    width: 100%;
+}
+
+main .diferencias{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    background: var(--azul3);
+}
+main .diferencias ul{
+    margin: 20px;
+}
+main .diferencias ul li{
+    color: #fff;
+    list-style: none;
+    font-size: 1.5em;
+    margin: 10px;
+}
+
+main .video{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;    
+}
+main .video img{
+    width: 60%;
+}
+
+
+
+@media screen and (max-width: 1000px){
+    .imagen .container{
+        bottom: 100px;
+    }
+}
+
+@media screen and (max-width: 850px){
+    .imagen h2{
+        width: 90%;
+        top: 50px;
+        font-size: 4em;
+    }
+    .imagen > .texto{
+        width: 90%;
+        top: 230px;
+        text-align: center;
+    }
+    .imagen .container{
+        bottom: inherit;
+        width: 100%;
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 470px){
+    .imagen h2{
+        width: 90%;
+        top: 50px;
+        font-size: 1em;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .imagen h2 span{
+        margin: 0px 6px;
+    }
+    .imagen > .texto{
+        top: 80px;
+        font-size: .8em;
+    }
+    .imagen .container{
+        grid-template-columns: 1em 1fr 1em;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        '. cotizador .'
+        '. whatsapp .'
+        ;
+    }
+    main .diferencias{
+        flex-direction: column;
+    }
+    main .video img{
+        width: 90%;
+    }
+}
