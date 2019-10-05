@@ -5,7 +5,8 @@
 <div class="container">
     <div class="login_facebook">
         <h2>Para continuar, inicia sesión en KTDRA</h2>
-        <button type="button" class="botton-facebook">INICIA CON FACEBOOK</button>
+        <br>
+        <a href="#" class="btn botton-facebook">INICIA CON FACEBOOK</a>
     </div>
     
     <div class="divider">
@@ -26,7 +27,7 @@
                 <input type="checkbox" checked="checked">
                 <span class="checkmark"></span>
             </label>
-            <i class="submit-btn">INICIAR SESION</i>
+            <a href="#" class="btn submit-btn">INICIAR <br> SESIÓN</a>
         </div>
     </form>
 
@@ -39,7 +40,7 @@
 
     <div class="texto-registrate">
         <p>¿No tienes cuenta?</p>
-        <a href="views/modules/registro.php" class="btn-registrar">REGISTRATE EN KTDRA</a>
+        <a href="views/modules/registro.php" class="btn btn-registrar">REGISTRATE EN KTDRA</a>
     </div>
     
     <div class="divider">

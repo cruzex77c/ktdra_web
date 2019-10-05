@@ -1,6 +1,23 @@
 a {
     text-decoration: none;
     color: #00A85A;
+    font-family: muli-regular;
+    cursor: pointer;
+}
+
+p {
+    font-family: muli-regular;
+}
+
+h2 {
+    font-family: muli-regular;
+}
+
+.btn {
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: muli-regular;
 }
 
 .divider {
@@ -54,21 +71,18 @@ a {
     margin-bottom: 10px;
 }
 
-.login_facebook .botton-facebook{
-    width: 100%;
-    height: 45px;
-    border: none;
-    border-radius: 20px;
+.login_facebook .botton-facebook {
     background-color: #3b5999;
     color: #fff;
     margin: 10px 0;
-    cursor: pointer;
+    font-size: 1em;
+    padding: 2% 20%;
 }
 
 .login_facebook .botton-facebook:hover {
     background-color: #3b5999d3;
 }
-
+/*======FORMULARIO========*/
 .formulario {
     margin-bottom: 30px;
     margin-top: 20px;
@@ -81,7 +95,17 @@ a {
 
 .formulario input[type="text"],
 .formulario input[type="password"],
-.formulario input[type="email"]{
+.formulario input[type="email"],
+.formulario input[type="number"]{
+    padding: 7px;
+    font-size: 18px;
+    line-height: 18px;
+    border: 1px solid #aaa;
+    vertical-align: top;
+    font-family: muli-regular;
+}
+
+.formulario select {
     padding: 7px;
     font-size: 18px;
     line-height: 18px;
@@ -95,24 +119,30 @@ a {
     width:  100%;
 }
 
+.formulario .dia, 
+.formulario .yers {
+    width:  25%;
+}
+
+.formulario .mes {
+    width: 48%;
+}
+
+.formulario .form-group .form-fecha{
+    text-align: justify;
+    margin: 5px 0 25px 0;
+}
 .formulario .submit-btn {
-    padding: 6px 65px 6px 65px;
-    width: 35%;
-    max-height: 50px;
-    font-size: 16px;
-    font-style: normal;
-    display: inline-block;
+    padding: 1% 13%;
     color: #fff;
     background-color: rgba(107, 9, 9, 0.767);
-    cursor: pointer;
-    border-radius: 30px;
     float: right;
 }
 
 .formulario .submit-btn:hover {
     background-color: rgba(107, 9, 9, 0.616);
 }
-
+/*=====TYPE RADIO & CHECKBOX=======*/
 .contenedor {
     position: relative;
     padding-left: 30px;
@@ -120,14 +150,13 @@ a {
     cursor: pointer;
     font-size: 17px;
     user-select: none;
+    font-family: muli-regular;
 }
 
 .contenedor input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
-    height: 0;
-    width: 0;
 }
 
 .checkmark {
@@ -139,21 +168,25 @@ a {
     background-color: #eee;
 }
 
-.contenedor:hover input ~ .checkmark {
+.contenedor:hover input ~ .checkmark,
+.contenedor:hover input ~ .checkmark-radio{
     background-color: #ccc;
 }
 
-.contenedor input:checked ~ .checkmark {
+.contenedor input:checked ~ .checkmark,
+.contenedor input:checked ~ .checkmark-radio {
     background-color: #2196F3;
 }
 
-.checkmark:after {
+.checkmark:after,
+.checkmark-radio:after {
     content: "";
     position: absolute;
     display: none;
 }
 
-.contenedor input:checked ~ .checkmark:after{
+.contenedor input:checked ~ .checkmark:after,
+.contenedor input:checked ~ .checkmark-radio:after {
     display: block;
 }
 
@@ -167,6 +200,25 @@ a {
     transform: rotate(45deg);
 }
 
+.checkmark-radio {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+.container .checkmark-radio:after {
+   top: 9px;
+   left: 9px;
+   width: 8px;
+   height: 8px;
+   border-radius: 50%;
+   background: white;
+}
+
 .texto-registrate {
     text-align: center;
     padding: 15px;
@@ -177,21 +229,15 @@ a {
     margin-bottom: 15px;
     font-weight: bold;
     font-size: 20px;
+    margin-bottom: 30px;
 }
 
 .btn-registrar {
-    padding: 15px;
-	text-align: center;
-	width: 100%;
-	max-height: 48px;
+    padding: 2% 20%;
     font-size: 18px;
-    font-style: normal;
 	line-height: 18px;
 	background-color: #fff;
-	display: inline-block;
 	color: #000;
-	cursor: pointer;
-    border-radius: 20px;
     border: 2px solid #000;
 }
 
@@ -206,25 +252,66 @@ a {
     margin-bottom: 40px;
     margin-top: 40px;
     font-size: 20px;
+    font-family: muli-regular;
 }
 
 .terminos {
     margin-bottom: 10px;
     font-size: 12px;
     color: #ccc;
+    font-family: muli-regular;
 }
 
-.terminos a {
-    text-decoration: none;
+.terminos-registro {
+    font-family: muli-regular;
+    text-align: center;
+    font-size: 14px;
+}
+
+.terminos a,
+.terminos-registro a {
     color: rgb(13, 158, 168);
-    cursor: pointer;
 }
 
-.terminos a:hover {
+.terminos a:hover,
+.terminos-registro a:hover {
     color: rgb(14, 180, 192);
 }
 
 .texto-centrado {
     text-align: center;
     margin-bottom: 20px;
+}
+
+.fecha-nacimiento {
+    font-family: muli-regular;
+    font-size: 1em;
+}
+
+.box-cache {
+    width: 100%;
+    height: 100px;
+    background-color: red;
+    margin: 20px 0 20px 0;
+}
+
+.enviar-registro {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.enviar-registro .btn-aceptar {
+    background-color: var(--amarillo);
+    color: #fff;
+    font-size: 1em;
+    padding: 2% 30%;
+}
+
+.enviar-registro p {
+    margin: 25px 0;
+}
+
+.enviar-registro p a {
+    color: var(--amarillo);
+    margin-left: 5px;
 }

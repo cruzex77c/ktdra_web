@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Regitro</title>
-    <link rel="stylesheet" href="views/css/config.css">
+    <link rel="stylesheet" href="../../../css/config.css">
     <link rel="stylesheet" href="../css/registro.css">
 </head>
 <body>
@@ -15,9 +15,8 @@
     </div>
     <div class="container">
         <div class="login_facebook">
-            <button type="button" class="botton-facebook">INICIA CON FACEBOOK</button>
+            <a href="#" class="btn botton-facebook">REGÍSTRATE CON FACEBOOK</a>
         </div>
-
         <div class="divider">
             <strong class="divider-title">o</strong>
         </div>
@@ -39,29 +38,68 @@
                 <input type="text" class="usuario" placeholder="¿Cómo te llamas?">
             </div>
             <div class="form-group">
-                <label for="fecha">Fecha de nacimiento</label>
-                <input type="text" class="usuario" placeholder="">
+                <label for="fecha" class="fecha-nacimiento">Fecha de nacimiento</label>
+                <div class="form-fecha">
+                    <input type="number" class="dia" placeholder="Día" max="31" maxlength="2" min="1" pattern="[0-9]">
+                    <select name="" id="" class="mes" placeholder="Mes">
+                        <option value="" selected="selected">Mes</option>
+                        <option value="01">Enero</option>
+                        <option value="02">Febrero</option>
+                        <option value="03">Marzo</option>
+                        <option value="04">Abril</option>
+                        <option value="05">Mayo</option>
+                        <option value="06">Junio</option>
+                        <option value="07">Julio</option>
+                        <option value="08">Agosto</option>
+                        <option value="09">Septiembre</option>
+                        <option value="10">Octubre</option>
+                        <option value="11">Noviembre</option>
+                        <option value="12">Diciembre</option>
+                    </select>
+                    <input type="number" class="yers" placeholder="Año" min="1900" max="2006" maxlength="4" pattern="[0-9]">
+                </div>
             </div>
             <div class="form-group">
                 <label class="contenedor">Hombre
-                    <input type="checkbox" checked="checked">
-                    <span class="checkmark"></span>
+                    <input type="radio" name="radio">
+                    <span class="checkmark-radio"></span>
                 </label>
                 <label class="contenedor">Mujer
-                    <input type="checkbox" checked="checked">
-                    <span class="checkmark"></span>
+                    <input type="radio" name="radio">
+                    <span class="checkmark-radio"></span>
                 </label>
                 <label class="contenedor">No binario
-                    <input type="checkbox" checked="checked">
-                    <span class="checkmark"></span>
+                    <input type="radio" name="radio">
+                    <span class="checkmark-radio"></span>
                 </label>
             </div>
             <div class="form-group">
                 <label class="contenedor">Compartir mis datos de registro con los proveedores de contenido de KTDRA para
                     fines de marketing.
-                    <input type="checkbox" checked="checked">
+                    <input type="checkbox">
                     <span class="checkmark"></span>
                 </label>
+            </div>
+            <div class="box-cache">
+
+            </div>
+            <div class="terminos-registro">
+                <p>
+                    Al hacer click en Registrarse, aceptas los
+                    <a href="#">Terminos de Condiciones de Uso</a>
+                    de KTDRA.
+                </p>
+                <br>
+                <p>
+                    Para obtener más información sobre cómo KTDRA
+                    recopila, utiliza, comparte y protege sus datos
+                    personales. Lea la <a href="#">Politica de Privacidad</a>
+                    de KTDRA.
+                </p>
+            </div>
+            <div class="enviar-registro">
+                <a href="#" class="btn btn-aceptar">REGÍSTRATE</a>
+                <p>¿Ya tienes una cuenta?<a href="../../index.php">Iniciar sesión</a></p>
             </div>
         </form>
 
